@@ -14,24 +14,33 @@
 </head>
 
 <body>
+
+  
+
   <section>
 
 
 
-    <!-- PAGE -->
+    <!-- LOGIN REGISTER PAGE -->
 
     <div class="container ">
 
       <div class="user signinBx">
         <div class="imgBx"><img
-            src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img1.jpg"
+            src="https://www.picture.lk/files/preview/800x1427/11688760432u4kirwhpfm3bicjmwgkjcv06sp7ovbug9vplhxskizxh3lu9sbdnb7xuoitoer6ejs7wgnc6upkcfihh7yrcavxtv2zsn1yc3gkk.jpg"
             alt="" /></div>
         <div class="formBx">
           <form action="" onsubmit="return false;">
             <h2>Sign In</h2>
-            <input type="text" name="" placeholder="Username" />
-            <input type="password" name="" placeholder="Password" />
-            <input type="submit" name="" value="Login" />
+            <div><input type="text" id="username1" name="" placeholder="Username" />
+            </div>
+            <div>
+            <input type="password" name="" id="password1" placeholder="Password" />
+          </div>
+          <div class="buton">
+            <button class="btn btn-warning" onclick="login()" type="submit">Login</button>
+            </div>
+
             <p class="signup">
               Don't have an account ?
               <a href="#" onclick="toggleForm();">Sign Up.</a>
@@ -43,11 +52,29 @@
         <div class="formBx">
           <form action="" onsubmit="return false;">
             <h2>Create an account</h2>
-            <input type="text" name="" placeholder="Username" />
-            <input type="email" name="" placeholder="Email Address" />
-            <input type="password" name="" placeholder="Create Password" />
-            <input type="password" name="" placeholder="Confirm Password" />
-            <input type="submit" name="" value="Sign Up" />
+            <div>
+            <input type="text" id="name" name="" placeholder="Name" />
+            <span id="nameError" class="error-message"></span>
+
+          </div>
+          <div>
+            <input type="text" id="username" name="" placeholder="Username" />
+            <span id="usernameError" class="error-message"></span>
+
+          </div>
+
+          <div> <input type="password" id="password" placeholder="password" class="form-control" >
+            <span id="passwordError" class="error-message"></span>
+          </div>
+
+          <div>
+            <input type="text" id="age" name="" placeholder="age" />
+            <span id="ageError" class="error-message"></span>
+
+          </div>
+          <div class="buton">
+            <button class="btn btn-warning"  onclick="start(event)" type="submit">Submit</button>
+            </div>
             <p class="signup">
               Already have an account ?
               <a href="#" onclick="toggleForm();">Sign in.</a>
@@ -55,11 +82,12 @@
           </form>
         </div>
         <div class="imgBx"><img
-            src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img2.jpg"
+            src="https://www.picture.lk/files/preview/800x1427/11688760267yn5eon2c8vbmy0gmifrl4q1amiytnqlkzlrigsneb58hdncxcnhmr6izdujob9hzdejcteynqwd3g7mumrkdcldwhf4uktnraqx8.jpg"
             alt="" /></div>
       </div>
     </div>
   </section>
+  
 </body>
 
 </html>
